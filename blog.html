@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Writing · Shiva Gautam</title>
+  <meta name="description" content="Notes on applied AI, data engineering and software development by Shiva Gautam.">
+  <meta name="theme-color" content="#f4f1ea">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <script>
+    (function () {
+      var theme = 'light';
+      try {
+        theme = localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      } catch (e) {}
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="index.html" aria-label="Shiva Gautam — home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span class="brand-name">Shiva Gautam</span>
+      </a>
+      <div class="nav-tools">
+        <button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Toggle theme">
+          <svg class="icon-moon" viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true"><path d="M5 1h3v1H5zM3 2h3v1H3zM2 3h3v1H2zM1 4h3v3H1zM1 7h4v2H1zM1 9h5v1H1zM2 10h5v1H2zM2 11h11v1H2zM3 12h9v1H3zM5 13h5v1H5zM12 3h1v1h-1zM11 4h3v1h-3zM12 5h1v1h-1z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true"><path d="M7 0h2v2H7zM7 14h2v2H7zM0 7h2v2H0zM14 7h2v2h-2zM2 2h2v2H2zM12 2h2v2h-2zM2 12h2v2H2zM12 12h2v2h-2zM6 4h4v1h1v1h1v4h-1v1h-1v1H6v-1H5v-1H4V6h1V5h1z"/></svg>
+        </button>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+          <span class="sr-only">Toggle navigation</span><span aria-hidden="true"></span>
+        </button>
+      </div>
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#work">Work</a></li>
+          <li><a href="index.html#copilot">Demo</a></li>
+          <li><a href="index.html#experience">Experience</a></li>
+          <li><a href="blog.html" class="active" aria-current="page">Writing</a></li>
+        </ul>
+        <a class="btn btn-ink btn-small" href="index.html#contact">Get in touch</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="blog-main">
+    <div class="container" id="blog-root">
+      <noscript><p>Please enable JavaScript to read the posts.</p></noscript>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-band" aria-hidden="true">
+      <canvas data-scene="stream" data-cell="8" data-seed="23"></canvas>
+    </div>
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Shiva Gautam</p>
+      <p class="footer-note"><a href="index.html">Back to the portfolio</a></p>
+    </div>
+  </footer>
+
+  <script src="js/engine.js"></script>
+  <script src="js/scenes.js"></script>
+  <script src="js/highlight.js"></script>
+  <script src="js/posts.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/blog.js"></script>
+</body>
+</html>

@@ -1,0 +1,603 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shiva Gautam — Software Engineer · Data Platforms · Applied AI</title>
+  <meta name="description" content="Shiva Gautam is a software engineer at MAQ Software, Noida, building enterprise data platforms, multi-agent AI systems and secure backends on Azure and Microsoft Fabric.">
+  <meta name="theme-color" content="#f4f1ea">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Shiva Gautam — Software Engineer · Data Platforms · Applied AI">
+  <meta property="og:description" content="Enterprise data platforms, multi-agent AI copilots and production backends on Azure and Microsoft Fabric.">
+  <meta property="og:image" content="assets/shiva.jpg">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <script>
+    (function () {
+      var theme = 'light';
+      try {
+        theme = localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      } catch (e) {}
+      document.documentElement.setAttribute('data-theme', theme);
+      // Hide the hero title until the pixel intro draws it; the timeout guarantees it always appears.
+      if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        document.documentElement.classList.add('title-loading');
+        setTimeout(function () { document.documentElement.classList.remove('title-loading'); }, 4000);
+      }
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Shiva Gautam",
+    "alternateName": "Shiva Kumar Gautam",
+    "jobTitle": "Software Engineer",
+    "worksFor": { "@type": "Organization", "name": "MAQ Software" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Noida", "addressCountry": "IN" },
+    "alumniOf": "PSIT College of Engineering, Kanpur",
+    "email": "mailto:kumarshiva0707@gmail.com",
+    "image": "assets/shiva.jpg",
+    "sameAs": ["https://www.linkedin.com/in/shivakumar07/", "https://github.com/shivakr07"],
+    "knowsAbout": ["Data Engineering", "Microsoft Fabric", "Applied AI", "Retrieval-Augmented Generation", "Multi-agent systems", "Backend engineering", "Azure"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="#top" aria-label="Shiva Gautam — home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span class="brand-name">Shiva Gautam</span>
+      </a>
+      <div class="nav-tools">
+        <button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Toggle theme">
+          <svg class="icon-moon" viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true"><path d="M5 1h3v1H5zM3 2h3v1H3zM2 3h3v1H2zM1 4h3v3H1zM1 7h4v2H1zM1 9h5v1H1zM2 10h5v1H2zM2 11h11v1H2zM3 12h9v1H3zM5 13h5v1H5zM12 3h1v1h-1zM11 4h3v1h-3zM12 5h1v1h-1z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true"><path d="M7 0h2v2H7zM7 14h2v2H7zM0 7h2v2H0zM14 7h2v2h-2zM2 2h2v2H2zM12 2h2v2h-2zM2 12h2v2H2zM12 12h2v2h-2zM6 4h4v1h1v1h1v4h-1v1h-1v1H6v-1H5v-1H4V6h1V5h1z"/></svg>
+        </button>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+          <span class="sr-only">Toggle navigation</span><span aria-hidden="true"></span>
+        </button>
+      </div>
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#expertise">Expertise</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#copilot">Demo</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#writing">Writing</a></li>
+        </ul>
+        <a class="btn btn-ink btn-small" href="#contact">Get in touch</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ============================== HERO ============================== -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="pulse" aria-hidden="true"></span>Software Engineer · MAQ Software · Noida, India</p>
+          <h1 id="hero-title" class="display">Shiva Gautam</h1>
+          <p class="tagline">I engineer the path from <em>raw data</em> to <em>intelligent products</em> — lakehouses, AI agents and the backends that serve them.</p>
+          <p class="lede">Nearly two years building on Azure and Microsoft Fabric: a multi-agent data copilot used by <strong>13,000+ Microsoft employees</strong>, a portal unifying <strong>100+ Power BI workspaces</strong>, and data infrastructure that cut Kusto compute by <strong>~30%</strong>.</p>
+          <div class="hero-actions">
+            <a class="btn btn-ink" href="#work">See selected work <span aria-hidden="true">→</span></a>
+            <a class="btn btn-line" href="#copilot">Try the copilot demo</a>
+          </div>
+          <ul class="hero-links" aria-label="Profiles">
+            <li><a href="https://github.com/shivakr07" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/shivakumar07/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="#resume">Resumes</a></li>
+          </ul>
+        </div>
+
+        <figure class="hero-figure">
+          <div class="scene-frame scene-frame--hero">
+            <canvas id="scene-diffusion" data-scene="diffusion" data-cell="4" role="img"
+              aria-label="Live pixel simulation of a diffusion model. Random Gaussian noise is progressively denoised into an image of a lotus, alongside the remaining noise and the cosine signal schedule."></canvas>
+          </div>
+          <figcaption class="scene-caption">
+            <div class="caption-row">
+              <span class="caption-title">Reverse diffusion, rendered live</span>
+              <span class="caption-meta mono">t = <span id="diffusion-step">1000</span> · ᾱ<sub>t</sub> = <span id="diffusion-signal">0%</span></span>
+            </div>
+            <label class="scrubber">
+              <span class="mono">x<sub>0</sub></span>
+              <input id="diffusion-t" type="range" min="0" max="1000" value="1000" aria-label="Diffusion timestep">
+              <span class="mono">x<sub>T</sub></span>
+            </label>
+            <p class="caption-note">x<sub>t</sub> = √ᾱ<sub>t</sub>·x<sub>0</sub> + √(1−ᾱ<sub>t</sub>)·ε under a cosine schedule. Drag to scrub timesteps, or tap a thumbnail.</p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="hero-band" aria-hidden="true">
+        <canvas data-scene="stream" data-cell="9" data-seed="7"></canvas>
+        <div class="band-labels">
+          <span style="--x: 0%">Bronze<span class="band-desc"> · raw</span></span>
+          <span style="--x: 33.33%">Silver<span class="band-desc"> · validated</span></span>
+          <span style="--x: 66.66%">Gold<span class="band-desc"> · aggregated</span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== IMPACT ============================== -->
+    <section class="impact" aria-label="Impact in numbers">
+      <div class="container">
+        <ul class="metrics">
+          <li class="reveal"><strong>13,000+</strong><span>Microsoft employees served by a multi-agent AI copilot</span></li>
+          <li class="reveal"><strong>100+</strong><span>Power BI workspaces unified into one searchable portal</span></li>
+          <li class="reveal"><strong>~30%</strong><span>Kusto compute cost removed by an adaptive scaling framework</span></li>
+          <li class="reveal"><strong>55%</strong><span>faster dataset refresh through DAX and incremental refresh</span></li>
+          <li class="reveal"><strong>300+</strong><span>ADF pipelines monitored for health, freshness and SLAs</span></li>
+          <li class="reveal"><strong>4</strong><span>Microsoft certifications across Fabric, SQL AI and agents</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================== ABOUT ============================== -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <figure class="portrait reveal">
+          <div class="portrait-frame">
+            <img src="assets/shiva.jpg" alt="Portrait of Shiva Gautam" width="400" height="334" loading="lazy">
+          </div>
+          <figcaption class="mono">Shiva Gautam · Noida, India</figcaption>
+        </figure>
+
+        <div class="about-copy reveal">
+          <p class="kicker">01 · About</p>
+          <h2 id="about-title" class="h2">Hi, I'm Shiva.</h2>
+          <p class="section-lede">I like the problems that sit between disciplines — where a model is only as good as the pipeline feeding it, and a pipeline only matters once a secure, fast product puts it in someone's hands.</p>
+          <p class="about-text">At MAQ Software I build for Microsoft: agentic copilots over enterprise data, Fabric lakehouses, and the .NET and React services around them. I care about measurable outcomes, clean interfaces and systems that keep working after the demo.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== EXPERTISE ============================== -->
+    <section class="section section--tint" id="expertise" aria-labelledby="expertise-title">
+      <div class="pattern-rule" aria-hidden="true"></div>
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker">02 · Expertise</p>
+          <h2 id="expertise-title" class="h2">Three disciplines, one system.</h2>
+          <p class="section-lede">Most problems I'm handed cross all three: the data has to be modelled and moved, reasoned over by models or agents, and served securely to real users. The pixel scenes aren't decoration — each one is a small, working simulation of the idea beside it.</p>
+        </header>
+
+        <!-- Data -->
+        <article class="pillar reveal" id="pillar-data" aria-labelledby="pillar-data-title">
+          <div class="pillar-copy">
+            <p class="pillar-index mono"><span class="swatch swatch-gold" aria-hidden="true"></span>Data engineering</p>
+            <h3 id="pillar-data-title" class="h3">Lakehouse platforms that stay fast, governed and cheap to run.</h3>
+            <p>I design metadata-driven pipelines on Microsoft Fabric, Azure Data Factory, Synapse and PySpark, organised as Bronze → Silver → Gold layers so every stage is reusable and configuration-driven rather than hand-built for each source.</p>
+            <ul class="evidence">
+              <li>Built a <strong>Kusto cluster-scaling framework</strong> — adaptive recursive time-window downshifting plus dynamic vertical and horizontal scaling — processing high-volume telemetry reliably at <strong>~30% lower compute cost</strong>.</li>
+              <li>Modelled governed Lakehouse datasets and semantic models using <strong>star and snowflake schemas</strong>; DAX and partition-based incremental refresh cut refresh time by <strong>55%</strong>.</li>
+              <li>Built operational monitoring for <strong>300+ ADF pipelines</strong>: health, freshness, SLA compliance and failures.</li>
+              <li>Built batch and streaming ETL with <strong>Kafka, Spark Structured Streaming and Delta Lake</strong>.</li>
+            </ul>
+            <ul class="tags" aria-label="Data engineering skills">
+              <li>Microsoft Fabric</li><li>Azure Data Factory</li><li>Synapse</li><li>PySpark</li><li>Spark Structured Streaming</li><li>Kafka</li><li>Delta Lake</li><li>Kusto / KQL</li><li>Power BI · DAX</li><li>Semantic models</li><li>Azure SQL</li><li>ADLS Gen2</li>
+            </ul>
+          </div>
+          <figure class="pillar-figure">
+            <div class="scene-frame">
+              <canvas id="scene-lakehouse" data-scene="lakehouse" data-cell="5" role="img"
+                aria-label="Live pixel simulation of a medallion lakehouse. Raw records enter the bronze layer, malformed rows are quarantined at a validation gate, clean rows are normalised in silver and aggregated per key in gold, with a Delta transaction log recording each commit."></canvas>
+            </div>
+            <figcaption class="scene-caption">
+              <div class="caption-row">
+                <span class="caption-title">Medallion ETL, simulated</span>
+                <span class="caption-meta mono">delta <span id="lake-version">v0</span> · quarantined <span id="lake-quarantine">0</span></span>
+              </div>
+              <p class="caption-note">Schema validation quarantines malformed rows, silver enforces types, gold aggregates by key, and compaction runs when partitions grow.</p>
+              <button class="chip-btn" type="button" data-action="inject" data-target="scene-lakehouse">Inject a malformed batch</button>
+            </figcaption>
+          </figure>
+        </article>
+
+        <!-- AI -->
+        <article class="pillar pillar--flip reveal" id="pillar-ai" aria-labelledby="pillar-ai-title">
+          <div class="pillar-copy">
+            <p class="pillar-index mono"><span class="swatch swatch-magenta" aria-hidden="true"></span>Applied AI</p>
+            <h3 id="pillar-ai-title" class="h3">Grounded agents that answer from enterprise data — safely.</h3>
+            <p>I build retrieval-grounded, multi-agent systems where an orchestrator routes each question to specialised agents over the right source — Kusto, Lakehouse or semantic model — and checks the answer before it reaches a user.</p>
+            <ul class="evidence">
+              <li>Architected <strong>Minerva</strong>, a multi-agent copilot for <strong>13,000+ Microsoft employees</strong>, with a Copilot Studio orchestrator routing to domain-specific Fabric Data Agents and automatic KQL generation for validation. <a href="#copilot">See how it works →</a></li>
+              <li>Shipped under <strong>Entra ID with RAI, DLP and SDL compliance</strong> — the controls enterprise AI actually needs.</li>
+              <li>Built a <strong>LangChain multi-agent system</strong> automating requirements analysis, code generation, test creation and code review.</li>
+              <li>I also work below the API level — PyTorch from first principles, and writing on <a href="blog.html?post=why-attention-divides-by-root-dk">why attention divides by √d<sub>k</sub></a>.</li>
+            </ul>
+            <ul class="tags" aria-label="Applied AI skills">
+              <li>RAG</li><li>Multi-agent orchestration</li><li>Tool calling</li><li>Copilot Studio</li><li>Fabric Data Agents</li><li>Azure OpenAI</li><li>LangChain</li><li>PyTorch</li><li>Responsible AI</li><li>Voice AI</li>
+            </ul>
+          </div>
+          <figure class="pillar-figure">
+            <div class="scene-frame">
+              <canvas id="scene-attention" data-scene="attention" data-cell="4" role="img"
+                aria-label="Live pixel simulation of causal multi-head self-attention. A twelve-token attention matrix computed with softmax of Q times K transpose over root d, with the future masked, feeding an output matrix Z equals A times V. Heads cycle between previous-token, attention-sink, local-window and content-routing patterns."></canvas>
+            </div>
+            <figcaption class="scene-caption">
+              <div class="caption-row">
+                <span class="caption-title">Causal self-attention · <span id="attention-name">Previous-token head</span></span>
+                <span class="caption-meta mono" id="attention-head">Head 1 of 4</span>
+              </div>
+              <p class="caption-note">A = softmax(QKᵀ/√d<sub>k</sub> + mask), Z = A·V over 12 tokens with sinusoidal positions. Hover a row to pick the query; the hatched triangle is the causal mask.</p>
+              <button class="chip-btn" type="button" data-action="nextHead" data-target="scene-attention">Next attention head</button>
+            </figcaption>
+          </figure>
+        </article>
+
+        <!-- Software -->
+        <article class="pillar reveal" id="pillar-software" aria-labelledby="pillar-software-title">
+          <div class="pillar-copy">
+            <p class="pillar-index mono"><span class="swatch swatch-blue" aria-hidden="true"></span>Backend &amp; software</p>
+            <h3 id="pillar-software-title" class="h3">Secure, backend-heavy systems that behave under load.</h3>
+            <p>I'm most at home in the backend: authentication, caching, rate limiting, pagination, messaging and clean service boundaries — with a React front end when the product needs one.</p>
+            <ul class="evidence">
+              <li>Built <strong>PRISM</strong> on React and .NET 10 with Entra ID/MSAL, Redis caching, pagination and rate limiting.</li>
+              <li>Built a <strong>secrets-management service</strong> in Spring Boot and PostgreSQL: JWT, RBAC, encrypted and versioned secrets with rotation, and <strong>90%+ test coverage</strong>.</li>
+              <li>Designed a <strong>five-service Node.js system</strong>: gateway, search, booking over RabbitMQ, reminders and auth.</li>
+              <li>Published <strong>basic-backend-setup</strong> on npm — <strong>700+ weekly downloads</strong>.</li>
+            </ul>
+            <ul class="tags" aria-label="Backend and software skills">
+              <li>C# · .NET</li><li>Node.js · Express</li><li>TypeScript</li><li>React · Next.js</li><li>Spring Boot</li><li>REST APIs</li><li>Redis</li><li>RabbitMQ</li><li>PostgreSQL</li><li>MongoDB</li><li>Docker</li><li>Entra ID · MSAL · JWT</li>
+            </ul>
+          </div>
+          <figure class="pillar-figure">
+            <div class="scene-frame">
+              <canvas id="scene-services" data-scene="services" data-cell="5" role="img"
+                aria-label="Live pixel simulation of a microservice system. Client requests pass through an API gateway guarded by a token-bucket rate limiter, are routed to auth, search and booking services, served through a cache-aside Redis layer backed by SQL, and booking events are queued for an asynchronous worker."></canvas>
+            </div>
+            <figcaption class="scene-caption">
+              <div class="caption-row">
+                <span class="caption-title">Gateway, rate limiting &amp; async messaging</span>
+                <span class="caption-meta mono"><span id="svc-rps">0</span> rps · cache hit <span id="svc-hit">0%</span> · 429s <span id="svc-429">0</span></span>
+              </div>
+              <p class="caption-note"><span class="dot dot-blue"></span>request <span class="dot dot-mint"></span>response <span class="dot dot-orange"></span>cache miss <span class="dot dot-magenta"></span>event <span class="dot dot-red"></span>rate-limited. The yellow gauge is the gateway's token bucket.</p>
+              <button class="chip-btn" type="button" data-action="spike" data-target="scene-services">Send a traffic spike</button>
+            </figcaption>
+          </figure>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============================== SELECTED WORK ============================== -->
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker">03 · Selected work</p>
+          <h2 id="work-title" class="h2">Production systems, described honestly.</h2>
+          <p class="section-lede">Enterprise work at MAQ Software, delivered for Microsoft. Project names and internal details are changed or omitted for client confidentiality; the architecture and the outcomes are real.</p>
+        </header>
+
+        <div class="cases">
+          <article class="case case--feature reveal" aria-labelledby="case-minerva">
+            <div class="case-top">
+              <p class="case-meta mono">MAQ Software · Applied AI · 2025–26</p>
+              <h3 id="case-minerva" class="h3">Minerva — a multi-agent copilot for capacity data</h3>
+              <p class="case-summary">Capacity insights were split across Kusto databases, a Fabric Lakehouse and semantic models, and getting answers meant writing KQL by hand. Minerva lets employees simply ask.</p>
+            </div>
+            <ol class="flow" aria-label="Minerva request flow">
+              <li>Question</li>
+              <li>Copilot Studio orchestrator</li>
+              <li>Domain Fabric Data Agents<small>Kusto · Lakehouse · Semantic models</small></li>
+              <li>Generated KQL for validation</li>
+              <li>Grounded answer</li>
+            </ol>
+            <dl class="case-grid">
+              <div><dt>What I built</dt><dd>The parent orchestrator and its routing to domain-specific Fabric Data Agents, retrieval grounding, and automatic KQL generation to validate responses.</dd></div>
+              <div><dt>Guardrails</dt><dd>Entra ID authentication with Responsible AI, DLP and SDL compliance for internal rollout.</dd></div>
+              <div><dt>Outcome</dt><dd><strong>13,000+ Microsoft employees</strong> served, manual Kusto querying replaced by natural language, and direct client appreciation.</dd></div>
+            </dl>
+            <a class="case-link" href="#copilot">Run the interactive demo <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="case case--feature reveal" aria-labelledby="case-prism">
+            <div class="case-top">
+              <p class="case-meta mono">MAQ Software · Full stack + data · 2025–26</p>
+              <h3 id="case-prism" class="h3">PRISM — one portal for 100+ Power BI workspaces</h3>
+              <p class="case-summary">Reports were scattered across more than a hundred workspaces, and every page view triggered live Fabric API calls. PRISM makes them searchable, explorable and fast.</p>
+            </div>
+            <ol class="flow" aria-label="PRISM architecture">
+              <li>PySpark metadata scanner<small>schemas · lineage</small></li>
+              <li>Azure SQL DataMart</li>
+              <li>.NET 10 API<small>MSAL · Redis · rate limits</small></li>
+              <li>React portal<small>embedded Power BI · natural-language queries</small></li>
+            </ol>
+            <dl class="case-grid">
+              <div><dt>Front end</dt><dd>React workspace browser, embedded Power BI through the Fabric SDK, and natural-language querying that generates charts and trend analysis.</dd></div>
+              <div><dt>Backend &amp; data</dt><dd>Entra ID/MSAL (with WAM for local development), Redis caching, pagination and rate limiting; a PySpark pipeline loading schemas and lineage into an Azure SQL DataMart.</dd></div>
+              <div><dt>Outcome</dt><dd>Hundreds of live Fabric API calls replaced by <strong>one centralised store</strong>, deployed on Azure App Service.</dd></div>
+            </dl>
+            <ul class="tags"><li>React</li><li>.NET 10</li><li>Fabric SDK</li><li>PySpark</li><li>Azure SQL</li><li>Redis</li></ul>
+          </article>
+
+          <article class="case reveal" aria-labelledby="case-kusto">
+            <p class="case-meta mono">MAQ Software · Data infrastructure</p>
+            <h3 id="case-kusto" class="h3">Adaptive Kusto scaling framework</h3>
+            <p>A reusable framework in Synapse notebooks for high-volume telemetry. When a query window is too heavy it recursively downshifts to smaller windows, while the cluster scales vertically and horizontally with load.</p>
+            <p class="case-outcome"><strong>~30%</strong> lower compute cost, with reliable processing at volume.</p>
+            <ul class="tags"><li>Synapse</li><li>Kusto / ADX</li><li>Python</li></ul>
+          </article>
+
+          <article class="case reveal" aria-labelledby="case-analytics">
+            <p class="case-meta mono">MAQ Software · Analytics engineering</p>
+            <h3 id="case-analytics" class="h3">Governed analytics that stays fast</h3>
+            <p>Metadata-driven medallion pipelines feeding Fabric Lakehouse datasets and star/snowflake semantic models, backed by operational dashboards covering every pipeline's health.</p>
+            <p class="case-outcome"><strong>55%</strong> faster refresh · <strong>300+</strong> pipelines monitored.</p>
+            <ul class="tags"><li>Fabric</li><li>ADF</li><li>DAX</li><li>Incremental refresh</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== COPILOT DEMO ============================== -->
+    <section class="section section--tint copilot" id="copilot" aria-labelledby="copilot-title">
+      <div class="pattern-rule pattern-rule--ai" aria-hidden="true"></div>
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker">04 · Live demo</p>
+          <h2 id="copilot-title" class="h2">Watch a multi-agent copilot think.</h2>
+          <p class="section-lede">A simplified re-creation of how Minerva answers a question. Choose a domain agent and a question, then follow it through planning, guardrails, routing, the generated query, the result and an independent KQL cross-check. The data and schemas are illustrative.</p>
+        </header>
+
+        <div class="copilot-grid">
+          <div class="copilot-left">
+            <div class="scene-frame scene-frame--agents">
+              <canvas id="scene-agents" data-scene="agents" data-cell="5" role="img"
+                aria-label="Pixel diagram of the multi-agent flow: the user's question goes to an orchestrator, which routes it to a Kusto, Lakehouse or semantic-model agent, each with its data source. The result passes through a KQL validator before the answer is returned."></canvas>
+            </div>
+            <div class="agent-tabs" role="tablist" aria-label="Domain agents"></div>
+            <div class="agent-questions" id="agent-questions" role="tabpanel"></div>
+          </div>
+
+          <div class="copilot-right">
+            <div class="trace-panel">
+              <div class="trace-head">
+                <p class="trace-title mono"><span class="trace-dot" aria-hidden="true"></span>Execution trace</p>
+                <p class="trace-status" role="status" aria-live="polite"></p>
+              </div>
+              <ol class="trace"></ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== EXPERIENCE ============================== -->
+    <section class="section" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker">05 · Experience</p>
+          <h2 id="experience-title" class="h2">Where I've built.</h2>
+        </header>
+
+        <ol class="timeline">
+          <li class="role reveal">
+            <div class="role-rail" aria-hidden="true"><span class="node node-now"></span></div>
+            <div class="role-body">
+              <header class="role-head">
+                <div>
+                  <h3 class="h3">Software Engineer</h3>
+                  <p class="role-org">MAQ Software <span class="role-place">· Noida</span></p>
+                </div>
+                <p class="role-dates mono">Jan 2025 — Present</p>
+              </header>
+              <p class="role-summary">Enterprise AI, data and full-stack engineering for Microsoft, on Azure and Microsoft Fabric.</p>
+              <ul class="role-points">
+                <li>Architected <strong>Minerva</strong>, a multi-agent copilot for 13,000+ Microsoft employees: a Copilot Studio orchestrator over domain-specific Fabric Data Agents (Kusto, Lakehouse, semantic models), secured by Entra ID with RAI, DLP and SDL compliance.</li>
+                <li>Built <strong>PRISM</strong> (React + .NET 10), unifying 100+ Power BI workspaces with embedded reports and natural-language querying, backed by MSAL auth, Redis caching and rate limiting.</li>
+                <li>Built a PySpark metadata pipeline for schemas and lineage into an Azure SQL DataMart, replacing hundreds of live Fabric API calls.</li>
+                <li>Developed metadata-driven medallion ETL with Fabric, ADF, Synapse and PySpark for Azure capacity analytics.</li>
+                <li>Created an adaptive Kusto cluster-scaling framework that cut compute cost by ~30%.</li>
+                <li>Cut dataset refresh time by 55% by optimising DAX, semantic models and incremental refresh; built monitoring for 300+ ADF pipelines.</li>
+              </ul>
+              <ul class="tags"><li>Microsoft Fabric</li><li>Copilot Studio</li><li>.NET</li><li>React</li><li>PySpark</li><li>Kusto</li><li>Azure</li></ul>
+            </div>
+          </li>
+
+          <li class="role reveal">
+            <div class="role-rail" aria-hidden="true"><span class="node"></span></div>
+            <div class="role-body">
+              <header class="role-head">
+                <div>
+                  <h3 class="h3">Software Engineer Trainee</h3>
+                  <p class="role-org">HashedIn by Deloitte <span class="role-place">· Bengaluru</span></p>
+                </div>
+                <p class="role-dates mono">Oct 2024 — Jan 2025</p>
+              </header>
+              <p class="role-summary">Backend, data engineering and GenAI engineering.</p>
+              <ul class="role-points">
+                <li>Built a <strong>multi-agent SDLC automation system</strong> in LangChain, orchestrating agents with tool calling, memory and retrieval across requirements analysis, code generation, test creation and code review.</li>
+                <li>Built a <strong>secrets-management system</strong> in Spring Boot and PostgreSQL: REST APIs with JWT and RBAC, encrypted and versioned secrets with rotation and access policies, and 90%+ unit-test coverage.</li>
+                <li>Developed batch and streaming ETL with Kafka, Spark Structured Streaming and Delta Lake in a medallion design, with schema validation, cleansing and aggregation.</li>
+              </ul>
+              <ul class="tags"><li>LangChain</li><li>Spring Boot</li><li>PostgreSQL</li><li>Kafka</li><li>Delta Lake</li><li>PySpark</li></ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============================== PROJECTS ============================== -->
+    <section class="section section--tint" id="projects" aria-labelledby="projects-title">
+      <div class="pattern-rule" aria-hidden="true"></div>
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker">06 · Projects &amp; open source</p>
+          <h2 id="projects-title" class="h2">Built in the open.</h2>
+          <p class="section-lede">Side projects are where I learn things properly — some are used by other developers every week.</p>
+        </header>
+
+        <ul class="projects">
+          <li class="project reveal">
+            <p class="project-type mono">Distributed systems</p>
+            <h3 class="h4">Airline management platform</h3>
+            <p>Five Node.js microservices: an API gateway (reverse proxy, rate limiting), flight search with Sequelize, booking over RabbitMQ, cron-driven reminders and JWT/RBAC auth.</p>
+            <ul class="tags"><li>Node.js</li><li>RabbitMQ</li><li>MySQL</li><li>JWT</li></ul>
+            <a class="project-link" href="https://github.com/shivakr07/api_gateway" target="_blank" rel="noopener">View gateway source <span aria-hidden="true">↗</span></a>
+          </li>
+          <li class="project reveal">
+            <p class="project-type mono">Voice AI · in progress</p>
+            <h3 class="h4">Sarvam voice AI lab</h3>
+            <p>A build-first lab for voice agents in Indian languages: ASR, TTS, streaming, turn detection and tool calling, measured on latency and word error rate.</p>
+            <ul class="tags"><li>Python</li><li>ASR · TTS</li><li>Evaluation</li></ul>
+            <a class="project-link" href="https://github.com/shivakr07/Sarvam" target="_blank" rel="noopener">View repository <span aria-hidden="true">↗</span></a>
+          </li>
+          <li class="project reveal">
+            <p class="project-type mono">Deep learning</p>
+            <h3 class="h4">PyTorch from first principles</h3>
+            <p>Notebooks building up from tensors: GPU-trained ANNs, CNNs on Fashion-MNIST, RNN question answering, transfer learning, regularisation and Optuna tuning.</p>
+            <ul class="tags"><li>PyTorch</li><li>CNN · RNN</li><li>Optuna</li></ul>
+            <a class="project-link" href="https://github.com/shivakr07/Pytorch_ML" target="_blank" rel="noopener">View notebooks <span aria-hidden="true">↗</span></a>
+          </li>
+          <li class="project reveal">
+            <p class="project-type mono">npm package</p>
+            <h3 class="h4">basic-backend-setup</h3>
+            <p>A starter package for bootstrapping Node.js backend projects.</p>
+            <p class="project-stat"><strong>700+</strong> weekly downloads</p>
+            <a class="project-link" href="https://www.npmjs.com/package/basic-backend-setup" target="_blank" rel="noopener">View on npm <span aria-hidden="true">↗</span></a>
+          </li>
+          <li class="project reveal">
+            <p class="project-type mono">Chrome extension</p>
+            <h3 class="h4">CODE</h3>
+            <p>Instant, customisable templates for common DSA patterns — binary search, shortest paths and more — straight from the browser.</p>
+            <p class="project-stat"><strong>500+</strong> downloads</p>
+            <a class="project-link" href="https://github.com/shivakr07/CODE" target="_blank" rel="noopener">View source <span aria-hidden="true">↗</span></a>
+          </li>
+          <li class="project reveal">
+            <p class="project-type mono">VS Code extension</p>
+            <h3 class="h4">EVANS theme</h3>
+            <p>A dark colour theme for Visual Studio Code, published on the Marketplace.</p>
+            <p class="project-stat"><strong>150+</strong> installs</p>
+            <a class="project-link" href="https://marketplace.visualstudio.com/items?itemName=Evans.awesome-vscode-theme" target="_blank" rel="noopener">View on Marketplace <span aria-hidden="true">↗</span></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================== WRITING ============================== -->
+    <section class="section" id="writing" aria-labelledby="writing-title">
+      <div class="container">
+        <header class="section-head section-head--split reveal">
+          <div>
+            <p class="kicker">07 · Writing</p>
+            <h2 id="writing-title" class="h2">Notes on AI, data and software.</h2>
+            <p class="section-lede">Explanations and lessons from building data platforms, AI systems and backends.</p>
+          </div>
+          <a class="btn btn-line" href="blog.html">All posts <span aria-hidden="true">→</span></a>
+        </header>
+        <div class="filters" role="group" aria-label="Filter posts by category"></div>
+        <ul class="posts"></ul>
+      </div>
+    </section>
+
+    <!-- ============================== CREDENTIALS ============================== -->
+    <section class="section section--tint" id="credentials" aria-labelledby="credentials-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker">08 · Credentials</p>
+          <h2 id="credentials-title" class="h2">Certified and educated for the work.</h2>
+        </header>
+
+        <div class="credentials">
+          <div class="certs">
+            <h3 class="h4 sub-head">Microsoft certifications</h3>
+            <ul class="cert-list">
+              <li class="cert reveal">
+                <span class="cert-code mono">DP-700</span>
+                <span class="cert-name">Fabric Data Engineer Associate</span>
+                <a href="https://drive.google.com/file/d/1v6VCEIDPQD2Dknqs-IYgnvXYmOKU7A-W/view?usp=sharing" target="_blank" rel="noopener" aria-label="View DP-700 certificate">Certificate ↗</a>
+              </li>
+              <li class="cert reveal">
+                <span class="cert-code mono">DP-600</span>
+                <span class="cert-name">Fabric Analytics Engineer Associate</span>
+                <a href="https://drive.google.com/file/d/1ixqIoTqADND8l_MdLpK3XJzLdzirWgCP/view?usp=sharing" target="_blank" rel="noopener" aria-label="View DP-600 certificate">Certificate ↗</a>
+              </li>
+              <li class="cert reveal">
+                <span class="cert-code mono">DP-800</span>
+                <span class="cert-name">SQL AI Developer Associate</span>
+                <a href="https://drive.google.com/file/d/11ClP9GDAUMf8NEyz9-6EiZU4Xy2y4L-k/view?usp=sharing" target="_blank" rel="noopener" aria-label="View SQL AI Developer Associate certificate">Certificate ↗</a>
+              </li>
+              <li class="cert reveal">
+                <span class="cert-code mono">AB-620</span>
+                <span class="cert-name">AI Agent Builder Associate</span>
+                <a href="https://drive.google.com/file/d/18OETUuUA9w8fwRLFFPb3tZXTW-1ODWPb/view?usp=sharing" target="_blank" rel="noopener" aria-label="View AI Agent Builder Associate certificate">Certificate ↗</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="education reveal">
+            <h3 class="h4 sub-head">Education</h3>
+            <div class="edu-card">
+              <p class="edu-dates mono">2020 — 2024</p>
+              <p class="edu-degree">B.Tech, Computer Science &amp; Artificial Intelligence</p>
+              <p class="edu-school">PSIT College of Engineering, Kanpur</p>
+              <p class="edu-uni">Dr. A.P.J. Abdul Kalam Technical University</p>
+              <p class="edu-grade"><strong>8.5</strong> <span>CGPA</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== CONTACT ============================== -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-inner">
+        <div class="reveal">
+          <p class="kicker">09 · Contact</p>
+          <h2 id="contact-title" class="display display--sm">Let's build something that holds up in production.</h2>
+          <p class="section-lede">I'm interested in roles across data engineering, applied AI and backend platforms — especially where all three meet.</p>
+          <ul class="contact-list">
+            <li><span class="contact-kind mono">Email</span><a href="mailto:kumarshiva0707@gmail.com">kumarshiva0707@gmail.com</a></li>
+            <li><span class="contact-kind mono">Phone</span><a href="tel:+919369637611">+91 93696 37611</a></li>
+            <li><span class="contact-kind mono">Phone</span><a href="tel:+917408574179">+91 74085 74179</a></li>
+            <li><span class="contact-kind mono">LinkedIn</span><a href="https://www.linkedin.com/in/shivakumar07/" target="_blank" rel="noopener">in/shivakumar07 ↗</a></li>
+            <li><span class="contact-kind mono">GitHub</span><a href="https://github.com/shivakr07" target="_blank" rel="noopener">shivakr07 ↗</a></li>
+          </ul>
+        </div>
+        <div class="resume-box reveal" id="resume">
+          <h3 class="h4 sub-head">Resumes</h3>
+          <a class="resume-link" href="assets/resume/Shiva_Gautam_Software_Engineer.pdf" download>
+            <span class="resume-kind">Software Engineer</span>
+            <span class="resume-desc">Backend, full stack and applied AI</span>
+            <span class="resume-cta mono">PDF ↓</span>
+          </a>
+          <a class="resume-link" href="assets/resume/Shiva_Gautam_Data_Engineer.pdf" download>
+            <span class="resume-kind">Data Engineer</span>
+            <span class="resume-desc">Fabric, lakehouse and analytics engineering</span>
+            <span class="resume-cta mono">PDF ↓</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-band" aria-hidden="true">
+      <canvas data-scene="stream" data-cell="8" data-seed="19"></canvas>
+    </div>
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Shiva Gautam</p>
+      <p class="footer-note">Every pixel scene is simulated live in your browser — no images, no libraries.</p>
+    </div>
+  </footer>
+
+  <script src="js/engine.js"></script>
+  <script src="js/scenes.js"></script>
+  <script src="js/highlight.js"></script>
+  <script src="js/posts.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/title.js"></script>
+  <script src="js/copilot.js"></script>
+  <script src="js/blog.js"></script>
+</body>
+</html>
