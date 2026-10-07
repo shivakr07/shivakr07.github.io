@@ -426,6 +426,35 @@ sub { font-size: 0.7em; }
 .case-grid dt { font: 500 0.7rem var(--mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
 .case-grid dd { margin: 0; color: var(--ink-2); font-size: 0.95rem; }
 
+/* ---------- PySpark questions ---------- */
+
+.pyspark-tools { display: flex; flex-wrap: wrap; gap: 8px; margin: -28px 0 28px; }
+.pyspark-control {
+  min-height: 40px; padding: 8px 12px; border: 1px solid var(--line);
+  background: var(--card); color: var(--ink); font: 600 0.84rem var(--sans); cursor: pointer;
+}
+.pyspark-control:hover { border-color: var(--ink); }
+.pyspark-groups { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px 48px; }
+.pyspark-group { min-width: 0; }
+.pyspark-group-title { padding-bottom: 12px; border-bottom: 2px solid var(--ink); }
+.pyspark-item { border-bottom: 1px solid var(--line); }
+.pyspark-item summary {
+  display: grid; grid-template-columns: 34px minmax(0, 1fr) 18px; gap: 10px;
+  align-items: start; padding: 14px 2px; color: var(--ink); cursor: pointer; list-style: none;
+}
+.pyspark-item summary::-webkit-details-marker { display: none; }
+.pyspark-item summary::after { content: '+'; text-align: center; font: 500 1.1rem var(--mono); color: var(--accent-text); }
+.pyspark-item[open] summary::after { content: '−'; }
+.pyspark-item summary:hover .pyspark-question { text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 4px; }
+.pyspark-number { padding-top: 2px; font-size: 0.72rem; color: var(--muted); }
+.pyspark-question { font-size: 0.94rem; font-weight: 600; line-height: 1.45; }
+.pyspark-answer { padding: 0 28px 16px 46px; color: var(--ink-2); font-size: 0.9rem; line-height: 1.6; }
+.pyspark-answer p { margin: 0 0 10px; }
+.pyspark-answer p:last-child { margin-bottom: 0; }
+.pyspark-answer pre { margin: 10px 0; padding: 12px; overflow-x: auto; background: var(--code-bg); color: var(--code-ink); font: 0.76rem/1.55 var(--mono); }
+.pyspark-answer code { font-family: var(--mono); font-size: 0.88em; }
+.pyspark-answer pre code { font-size: inherit; }
+
 /* ---------- Copilot demo ---------- */
 
 .copilot-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(24px, 4vw, 48px); align-items: start; }
@@ -713,6 +742,7 @@ sub { font-size: 0.7em; }
   .pillar--flip .pillar-figure { order: 2; }
   .pillar-figure, .copilot-left { position: static; }
   .cases, .copilot-grid, .credentials, .contact-inner, .posts--list, .related .posts { grid-template-columns: 1fr; }
+  .pyspark-groups { gap: 32px; }
 }
 
 @media (max-width: 600px) {
@@ -721,6 +751,9 @@ sub { font-size: 0.7em; }
   .metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .metrics li, .metrics li:nth-child(4) { border-left: 0; padding-left: 0; }
   .projects, .posts { grid-template-columns: 1fr; }
+  .pyspark-groups { grid-template-columns: 1fr; gap: 28px; }
+  .pyspark-tools { margin-top: -20px; }
+  .pyspark-answer { padding-left: 44px; }
   .hero-band { height: 84px; }
   .band-labels > span { font-size: 0.6rem; padding: 2px 5px; left: calc(var(--x) + 6px); }
   .band-desc { display: none; }
